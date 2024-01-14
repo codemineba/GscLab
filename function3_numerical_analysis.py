@@ -19,7 +19,7 @@ class Gsc_funcnum:
 
         # 创建Gtk.Builder对象并加载Glade文件
         self.builder = Gtk.Builder()
-        self.builder.add_from_file("./glade_file/GscLab8.glade")
+        self.builder.add_from_file("./glade_file/Gsclab8.glade")
 
 
         # 获取功能选择界面的窗口
