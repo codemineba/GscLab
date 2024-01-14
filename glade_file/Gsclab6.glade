@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.40.0 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkWindow" id="Gscwindows6">
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">GscLab</property>
+    <property name="default-width">600</property>
+    <property name="default-height">805</property>
+    <property name="icon-name">computer</property>
+    <signal name="destroy" handler="onDestroy" swapped="no"/>
+    <child>
+      <object class="GtkFixed">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkComboBox" id="container1">
+            <property name="width-request">400</property>
+            <property name="height-request">50</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="has-entry">True</property>
+            <property name="entry-text-column">1</property>
+            <child internal-child="entry">
+              <object class="GtkEntry">
+                <property name="can-focus">True</property>
+                <property name="placeholder-text" translatable="yes">请选择插值法</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">84</property>
+            <property name="y">114</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkComboBox" id="container2">
+            <property name="width-request">400</property>
+            <property name="height-request">50</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="has-entry">True</property>
+            <child internal-child="entry">
+              <object class="GtkEntry">
+                <property name="can-focus">True</property>
+                <property name="placeholder-text" translatable="yes">请输入原函数</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">84</property>
+            <property name="y">199</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkComboBox" id="container3">
+            <property name="width-request">400</property>
+            <property name="height-request">50</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="has-entry">True</property>
+            <child internal-child="entry">
+              <object class="GtkEntry">
+                <property name="can-focus">True</property>
+                <property name="placeholder-text" translatable="yes">请输入插值点</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">84</property>
+            <property name="y">284</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkComboBox" id="container4">
+            <property name="width-request">400</property>
+            <property name="height-request">50</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="has-entry">True</property>
+            <child internal-child="entry">
+              <object class="GtkEntry">
+                <property name="can-focus">True</property>
+                <property name="placeholder-text" translatable="yes">请输入函数值</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">84</property>
+            <property name="y">369</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="turntoplt">
+            <property name="label" translatable="yes">绘制</property>
+            <property name="width-request">200</property>
+            <property name="height-request">67</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+          </object>
+          <packing>
+            <property name="x">189</property>
+            <property name="y">678</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="width-request">186</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkEntry" id="enter1">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="placeholder-text" translatable="yes">起始点的边界条件</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="x">123</property>
+            <property name="y">543</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="width-request">186</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkEntry" id="enter2">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="placeholder-text" translatable="yes">结束点的边界条件</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="x">123</property>
+            <property name="y">601</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="width-request">51</property>
+            <property name="height-request">28</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">m0: </property>
+                <attributes>
+                  <attribute name="font-desc" value="Sans-Serif Oblique 11"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="x">50</property>
+            <property name="y">547</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="width-request">51</property>
+            <property name="height-request">28</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">mn: </property>
+                <attributes>
+                  <attribute name="font-desc" value="Sans-Serif Oblique 11"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="x">50</property>
+            <property name="y">604</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkComboBox" id="container5">
+            <property name="width-request">400</property>
+            <property name="height-request">50</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="has-entry">True</property>
+            <child internal-child="entry">
+              <object class="GtkEntry">
+                <property name="can-focus">True</property>
+                <property name="placeholder-text" translatable="yes">请输入导数值</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">82</property>
+            <property name="y">451</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="width-request">231</property>
+            <property name="height-request">59</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">插值法的误差可视化</property>
+                <attributes>
+                  <attribute name="font-desc" value="Meiryo Bold 18"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="x">143</property>
+            <property name="y">27</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

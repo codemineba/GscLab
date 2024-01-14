@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.40.0 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkWindow" id="Gsc_phy">
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">GscLab</property>
+    <property name="resizable">False</property>
+    <property name="default-width">800</property>
+    <property name="default-height">880</property>
+    <property name="icon-name">computer</property>
+    <child>
+      <object class="GtkFixed">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">200</property>
+            <property name="height-request">70</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">物理模型</property>
+            <attributes>
+              <attribute name="font-desc" value="STCaiyun Bold 28"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">301</property>
+            <property name="y">5</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">158</property>
+            <property name="height-request">49</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">选择物理模型</property>
+            <attributes>
+              <attribute name="font-desc" value="Microsoft JhengHei Bold 11"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">71</property>
+            <property name="y">70</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">100</property>
+            <property name="height-request">35</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">物理方程</property>
+            <attributes>
+              <attribute name="font-desc" value="Microsoft JhengHei Bold 11"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">101</property>
+            <property name="y">170</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="width-request">216</property>
+            <property name="height-request">41</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="orientation">vertical</property>
+            <property name="spacing">8</property>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">kx = -m*d^2x/dt^2</property>
+                <attributes>
+                  <attribute name="font-desc" value="Sans Bold Oblique 10"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">x = A cos(wt + b)</property>
+                <attributes>
+                  <attribute name="font-desc" value="Sans Bold Oblique 10"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">v = -Aw sin(wt + b)</property>
+                <attributes>
+                  <attribute name="font-desc" value="Sans Bold Oblique 10"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">v = -Aw^2 cos(wt + b)</property>
+                <attributes>
+                  <attribute name="font-desc" value="Sans Bold Oblique 10"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="x">50</property>
+            <property name="y">220</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="canshubox">
+            <property name="width-request">400</property>
+            <property name="height-request">160</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="x">329</property>
+            <property name="y">80</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="width-request">280</property>
+            <property name="height-request">480</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="orientation">vertical</property>
+            <property name="spacing">24</property>
+            <child>
+              <object class="GtkBox" id="phy_function1">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="orientation">vertical</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkBox" id="phy_function2">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="orientation">vertical</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkBox" id="phy_function3">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="orientation">vertical</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="x">434</property>
+            <property name="y">367</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="phy_image">
+            <property name="width-request">300</property>
+            <property name="height-request">280</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="x">75</property>
+            <property name="y">459</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="gscphyimage">
+            <property name="width-request">100</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="stock">gtk-missing-image</property>
+          </object>
+          <packing>
+            <property name="x">36</property>
+            <property name="y">378</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">100</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">【弹簧振子模型】</property>
+            <attributes>
+              <attribute name="font-desc" value="MS Gothic Bold 16"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">168</property>
+            <property name="y">378</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkComboBox" id="phycomboBox">
+            <property name="width-request">100</property>
+            <property name="height-request">45</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="has-entry">True</property>
+            <property name="entry-text-column">1</property>
+            <child internal-child="entry">
+              <object class="GtkEntry">
+                <property name="can-focus">True</property>
+                <property name="editable">False</property>
+                <property name="placeholder-text" translatable="yes">请选择物理模型</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">54</property>
+            <property name="y">114</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSwitch" id="physwitch1">
+            <property name="width-request">51</property>
+            <property name="height-request">27</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="active">True</property>
+          </object>
+          <packing>
+            <property name="x">317</property>
+            <property name="y">762</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSwitch" id="physwitch2">
+            <property name="width-request">51</property>
+            <property name="height-request">27</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="active">True</property>
+          </object>
+          <packing>
+            <property name="x">317</property>
+            <property name="y">805</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">128</property>
+            <property name="height-request">39</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">是否显示物块运动范围（质心）</property>
+            <attributes>
+              <attribute name="font-desc" value="Microsoft JhengHei UI Bold 10"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">75</property>
+            <property name="y">755</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">128</property>
+            <property name="height-request">39</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">是否显示物块运动范围（整体）</property>
+            <attributes>
+              <attribute name="font-desc" value="Microsoft JhengHei UI Bold 10"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">75</property>
+            <property name="y">798</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="wintemp1">
+    <property name="can-focus">False</property>
+    <child>
+      <object class="GtkFixed" id="tanghuang_fixed">
+        <property name="width-request">32</property>
+        <property name="height-request">32</property>
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="margin-bottom">230</property>
+        <child>
+          <object class="GtkButton" id="ok_button">
+            <property name="label" translatable="yes">确认</property>
+            <property name="width-request">95</property>
+            <property name="height-request">16</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+          </object>
+          <packing>
+            <property name="x">46</property>
+            <property name="y">225</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">100</property>
+            <property name="height-request">31</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">输入相关系数：</property>
+            <attributes>
+              <attribute name="font-desc" value="Microsoft JhengHei Bold 14"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="begin_end_button">
+            <property name="label" translatable="yes">开始/结束</property>
+            <property name="width-request">95</property>
+            <property name="height-request">16</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+          </object>
+          <packing>
+            <property name="x">183</property>
+            <property name="y">225</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="pause_button">
+            <property name="label" translatable="yes">暂停</property>
+            <property name="width-request">95</property>
+            <property name="height-request">16</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+          </object>
+          <packing>
+            <property name="x">311</property>
+            <property name="y">225</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">88</property>
+            <property name="height-request">33</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">物块质量：</property>
+            <attributes>
+              <attribute name="font-desc" value="Microsoft YaHei Bold 10"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">40</property>
+            <property name="y">42</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">88</property>
+            <property name="height-request">33</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">弹簧劲度系数：</property>
+            <attributes>
+              <attribute name="font-desc" value="Microsoft YaHei Bold 10"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">39</property>
+            <property name="y">87</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">88</property>
+            <property name="height-request">33</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">初始位置：</property>
+            <attributes>
+              <attribute name="font-desc" value="Microsoft YaHei Bold 10"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">38</property>
+            <property name="y">131</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">88</property>
+            <property name="height-request">33</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">初始速度：</property>
+            <attributes>
+              <attribute name="font-desc" value="Microsoft YaHei Bold 10"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">38</property>
+            <property name="y">173</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="spin1">
+            <property name="width-request">75</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="activates-default">True</property>
+            <property name="text" translatable="yes">3</property>
+            <property name="numeric">True</property>
+          </object>
+          <packing>
+            <property name="x">182</property>
+            <property name="y">44</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="spin2">
+            <property name="width-request">32</property>
+            <property name="height-request">32</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="text" translatable="yes">2</property>
+            <property name="numeric">True</property>
+          </object>
+          <packing>
+            <property name="x">182</property>
+            <property name="y">89</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="spin3">
+            <property name="width-request">32</property>
+            <property name="height-request">32</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="text" translatable="yes">5</property>
+            <property name="numeric">True</property>
+          </object>
+          <packing>
+            <property name="x">182</property>
+            <property name="y">132</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="spin4">
+            <property name="width-request">32</property>
+            <property name="height-request">32</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="text" translatable="yes">1</property>
+            <property name="numeric">True</property>
+          </object>
+          <packing>
+            <property name="x">182</property>
+            <property name="y">174</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="wintemp2">
+    <property name="can-focus">False</property>
+    <child>
+      <object class="GtkFixed" id="dangbai_fixed">
+        <property name="name">tanghuang_fixed</property>
+        <property name="width-request">32</property>
+        <property name="height-request">32</property>
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="margin-bottom">230</property>
+        <child>
+          <object class="GtkButton" id="ok_button2">
+            <property name="label" translatable="yes">确认</property>
+            <property name="width-request">95</property>
+            <property name="height-request">16</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+          </object>
+          <packing>
+            <property name="x">46</property>
+            <property name="y">220</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">100</property>
+            <property name="height-request">31</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">输入相关系数</property>
+            <attributes>
+              <attribute name="font-desc" value="Microsoft JhengHei Bold 11"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">71</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="begin_end_button2">
+            <property name="label" translatable="yes">开始/结束</property>
+            <property name="width-request">95</property>
+            <property name="height-request">16</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+          </object>
+          <packing>
+            <property name="x">183</property>
+            <property name="y">220</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="pause_button2">
+            <property name="label" translatable="yes">暂停</property>
+            <property name="width-request">95</property>
+            <property name="height-request">16</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+          </object>
+          <packing>
+            <property name="x">311</property>
+            <property name="y">220</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
