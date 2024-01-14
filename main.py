@@ -19,7 +19,7 @@ def jump_help(self):
 
 
 builder = Gtk.Builder()
-builder.add_from_file("./glade_file/Gsclab1.glade")
+builder.add_from_file("./glade_file/GscLab1.glade")
 
 window = builder.get_object("Gscwindow1")
 window.connect("destroy", Gtk.main_quit)
