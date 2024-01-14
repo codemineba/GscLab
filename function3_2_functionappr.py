@@ -182,9 +182,9 @@ class Gsc_functionappr:
         win_fun_plt.label2.set_text(combined_text)
 
         # 填充基和矩阵
-        if new_span is not "无":
+        if new_span != "无":
             jifxlabel.set_text('\n'.join(str(x) for x in new_span))
-        if new_matrix is not "无":
+        if new_matrix != "无":
             matrixlabel.set_text('\n'.join(str(x) for x in new_matrix))
 
         # 绘图
